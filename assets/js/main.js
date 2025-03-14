@@ -320,7 +320,8 @@ document.getElementById("submit-form").addEventListener("submit", function (even
 
   console.log(data);
   emailjs.send("service_hlmhvjd","template_6w0m4kp",data).then(function(res){
-    alert("success")
+    alert("success");
+    document.getElementById("submit-form").reset();
   })
 
   // setTimeout(() => {
